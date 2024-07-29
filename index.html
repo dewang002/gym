@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-700 w-screen h-screen overflow-hidden">
+  <h1 class="text-center font-medium text-xl text-zinc-200 mb-4">This is very brief way to find out your max strenght lvl <br>it can be little up or down but not too much so you can really on it.</h1>
+
+  <div class=' flex flex-col gap-8 items-center justify-center h-3/6 w-screen '>
+     <h1 class="font-medium md:text-xl text-zinc-200 underline mt-20 p-2">⚠ Make sure reps you enter should be between 5reps to 10reps only</h1>
+    
+  <!-- -------------------------------btn -->
+  <div class="h-[20vh] w-full flex md:justify-center justify-end gap-4 p-2">
+    <h1 class="text-white font-bold text-xl">in lbs</h1>
+  <div id="toggleButton" class="relative w-14 h-8 bg-gray-400 rounded-full cursor-pointer">
+    <div class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full transition-transform transform"></div>
+  </div>
+  </div>
+    
+    <form id='form' class=' flex items-center justify-center flex-col md:w-[30vw]  h-[30vh]  gap-4'>
+      <input type="number" class="px-4 input1 rounded-md w-full md:h-2/6 h-2/6 text-2xl outline-none" placeholder="weight lifted" id="input">
+      <input type="number" id=input2 class="px-4 rounded-md w-full md:h-2/6 h-2/6 text-2xl outline-none" placeholder="reps" id="input">
+      <button  class="enterbtn px-10 py-4 bg-green-300 rounded-md font-bold" type="submit">Submit</button>
+    </form>
+    
+     <h1  class="text-zinc-400 font-bold text-4xl text-center">Find Your 1RPM 💪<br>≈<span id="result" class="text-white"> </span> </h1>
+     <h3 class="text-center text-zinc-400 font-bold text-xl">please try this max number only when you are feeling fresh !!</h3>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
